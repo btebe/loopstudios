@@ -83,7 +83,7 @@ To see how you can add code snippets, see below:
   left: 0;
 }
 
-/* overlaty */
+/* overlay */
 
 .img-gradient {
   position: relative;
