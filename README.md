@@ -1,70 +1,137 @@
-# Getting Started with Create React App
+# Frontend Mentor - Loopstudios landing page solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The challenge
 
-### `npm test`
+Users should be able to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-### `npm run build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![1](./src/screenshots/loopstudios_desktop.png)
+![2](./src/screenshots/loopstudios_tablet.png)
+![3](./src/screenshots/loopstudios_mobile.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Links
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-### `npm run eject`
+## My process
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Built with
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### What I learned
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+There are three topics i learnt. first is how to overlap columns and rows in a grid. Second is how to underline in a hovered state of an item but with a shorter width than usual. Thirdly, i learnt how to partial overlay a card by not effecting the text and also when in hovered state to get rid of that overlay with an opacity by using pesuedos.
 
-## Learn More
+To see how you can add code snippets, see below:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```css
+/* column overlap */
+.grid-container-sectionOne > article {
+  grid-column: 2/-1;
+  align-self: center;
+  margin-top: 13rem;
+  width: 100%;
+}
+/* underline-indicator */
+.underline-indicators > li::after {
+  content: "";
+  position: relative;
+  bottom: 0;
+  top: 40%;
+  left: -50%;
+  transform: translate(50%, -40%);
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: hsl(var(--white));
+}
+.underline-indicators > li:hover::after,
+.underline-indicators > li:focus::after {
+  width: 50%;
+  left: 0;
+}
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+/* overlaty */
 
-### Code Splitting
+.img-gradient {
+  position: relative;
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+.img-gradient::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0,
+    hsl(var(--black) / 0.7) 100%
+  );
+}
+.card:hover {
+  cursor: pointer;
+}
+.img-gradient:hover::after {
+  content: "";
+  display: none;
+}
+.img-gradient:hover img {
+  opacity: 0.5;
+}
 
-### Analyzing the Bundle Size
+.img-gradient:hover h1 {
+  color: hsl(var(--black)) !important;
+  z-index: 3000;
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Continued development
 
-### Making a Progressive Web App
+I had issues with the responsiveness of the website. I would like to write less code to achieve this.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Useful resources
 
-### Advanced Configuration
+- [Example resource 1](https://www.youtube.com/watch?v=HFG3BKOqOlE) - This helped me to understand grid column overlapping.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Author
 
-### Deployment
+- Website - [Basma Tebe](https://basma94tebe.wixsite.com/my-site)
+- Frontend Mentor - [@btebe](https://www.frontendmentor.io/profile/btebe)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Acknowledgments
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I would like to give my gratitude to Kevin Powel for posting a video on Youtube about overlaping content in css grid. Also i would acknowledge the stackoverFlow community for their helpful solutions and tips on various topics on css.
