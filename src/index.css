@@ -500,7 +500,7 @@ or *:not(:first-child)
   padding-left: 2rem;
   padding-top: 3rem;
 }
-.header--sectionOne > div > h1{
+.header--sectionOne > div > h2{
   text-transform: uppercase;
   font-family: var(--ff-sans-cond);
   font-weight: lighter;
@@ -529,7 +529,7 @@ or *:not(:first-child)
   grid-area: header;
 }
 
-.grid-container-sectionTwo >  header > h1{
+.grid-container-sectionTwo >  header > h2{
   grid-area: title;
   text-transform: uppercase;
   font-size: 2.8em;
@@ -584,7 +584,7 @@ or *:not(:first-child)
   position: relative;
   padding: 1rem;
 }
-.card > .img-gradient > h1{
+.card > .img-gradient > h2{
   text-transform: uppercase;
   position: absolute;
   bottom: 0;
@@ -623,7 +623,7 @@ or *:not(:first-child)
 
 }
 
-.img-gradient:hover h1{
+.img-gradient:hover h2{
   color:hsl(var(--black)) !important;
   z-index: 3000;
 
@@ -718,7 +718,7 @@ or *:not(:first-child)
     padding: 3rem 0rem !important;
   }
 
-  .header--sectionOne > div > h1{
+  .header--sectionOne > div > h2{
     font-size: 1.8em !important;
   }
 
@@ -734,7 +734,7 @@ or *:not(:first-child)
     place-items: center;
     row-gap: 2rem;
   }
-  .grid-container-sectionTwo > header > h1{
+  .grid-container-sectionTwo > header > h2{
     grid-area: title;
     font-size: 1.8em !important;
     margin-left: 0 !important;
@@ -760,7 +760,7 @@ or *:not(:first-child)
   .card{
     padding: 0 0;
   }
-  .card > .img-gradient > h1{
+  .card > .img-gradient > h2{
     padding: 1rem 1.5rem;
     font-size: 1.5em;
   }
@@ -904,7 +904,7 @@ or *:not(:first-child)
   padding: 0;
 
 }
-.header--sectionOne > div > h1{
+.header--sectionOne > div > h2{
   font-size: 1.9em;
   letter-spacing: normal;
  
@@ -921,7 +921,7 @@ or *:not(:first-child)
   column-gap: 0rem;
  
 }
-.grid-container-sectionTwo > header > h1{
+.grid-container-sectionTwo > header > h2{
   font-size: 1.9em;
 }
 

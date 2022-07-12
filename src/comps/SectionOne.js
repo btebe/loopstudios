@@ -15,7 +15,7 @@ function SectionOne() {
       <article>
         <header className='header--sectionOne'>
           <div className='flow'>
-            <h1>The leader in interactive VR</h1>
+            <h2>The leader in interactive VR</h2>
             <p>
               Founded in 2011, Loopstudios has been producing world-class
               virtual reality projects for some of the best companies around the

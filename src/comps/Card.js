@@ -6,9 +6,9 @@ function Card({ title, dimg, mimg, alt }) {
   return (
     <a href='something' className='card'>
       <div className='img-gradient'>
-        <h1 className='uppercase'>
+        <h2 className='uppercase'>
           {title[0]} <br /> {title[1]}
-        </h1>
+        </h2>
         {isMobile ? <img src={mimg} alt={alt} /> : <img src={dimg} alt={alt} />}
       </div>
     </a>

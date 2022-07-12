@@ -5,7 +5,7 @@ function SectionTwo() {
   return (
     <section className='grid-container-sectionTwo grid'>
       <header>
-        <h1>Our creations</h1>
+        <h2>Our creations</h2>
       </header>
       <a href='seeAll' className='btn'>
         See All
