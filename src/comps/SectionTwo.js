@@ -4,12 +4,14 @@ import { data } from "../comps/Data";
 function SectionTwo() {
   return (
     <section className='grid-container-sectionTwo grid'>
-      <h1>Our creations</h1>
+      <header>
+        <h1>Our creations</h1>
+      </header>
       <a href='seeAll' className='btn'>
         See All
       </a>
 
-      <article className='card-container'>
+      <div className='card-container'>
         {data.map((item, index) => {
           return (
             <Card
@@ -21,7 +23,7 @@ function SectionTwo() {
             />
           );
         })}
-      </article>
+      </div>
     </section>
   );
 }

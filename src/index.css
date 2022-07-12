@@ -520,19 +520,23 @@ or *:not(:first-child)
 
 .grid-container-sectionTwo {
   grid-template-areas:
-  "title button"
+  "header button"
   "card card";
   grid-template-rows: min-content max-content ;
+
+}
+.grid-container-sectionTwo >  header {
+  grid-area: header;
 }
 
-.grid-container-sectionTwo > h1{
+.grid-container-sectionTwo >  header > h1{
   grid-area: title;
   text-transform: uppercase;
   font-size: 2.8em;
   font-family: var(--ff-sans-cond);
   margin-left: 1rem;
 }
-.grid-container-sectionTwo > a{
+.grid-container-sectionTwo > .btn{
   grid-area: button;
   place-self: center end;
 }
@@ -574,7 +578,7 @@ or *:not(:first-child)
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: 1fr 1fr;
   place-items: center;
-  row-gap: 3rem;
+  row-gap: 1rem;
 }
 .card{
   position: relative;
@@ -699,11 +703,7 @@ or *:not(:first-child)
     font-size: 2.6em;
     letter-spacing: .1ch;
   }
-  /* .hero-content > h1{
-    font-size: 11px;
-    font-size: 2.6em;
-    letter-spacing: .1ch;
-  } */
+
 
   .hero--grid{
     display: flex !important;
@@ -727,14 +727,14 @@ or *:not(:first-child)
 
   .grid-container-sectionTwo{
     grid-template-areas: 
-        "title"
+        "header"
         "content"
         "button";
     grid-template-rows: min-content max-content min-content;
     place-items: center;
     row-gap: 2rem;
   }
-  .grid-container-sectionTwo > h1{
+  .grid-container-sectionTwo > header > h1{
     grid-area: title;
     font-size: 1.8em !important;
     margin-left: 0 !important;
@@ -921,7 +921,7 @@ or *:not(:first-child)
   column-gap: 0rem;
  
 }
-.grid-container-sectionTwo > h1{
+.grid-container-sectionTwo > header > h1{
   font-size: 1.9em;
 }
 
@@ -954,12 +954,7 @@ or *:not(:first-child)
     grid-template-columns: 1fr;
   
   }
-  /* .hero-content > h1{
-    font-size: 11px;
-    font-size: 3.3em;
-    line-height: 1.3em;
-    
-  } */
+
 
   /* section one */
 
