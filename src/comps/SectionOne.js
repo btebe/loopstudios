@@ -7,23 +7,22 @@ function SectionOne() {
   return (
     <section className='grid-container-sectionOne grid'>
       {isTabletOrMobile ? (
-        <img src={image2} alt='image' />
+        <img src={image2} alt='vr-game' />
       ) : (
-        <img src={image1} alt='image' />
+        <img src={image1} alt='vr-game' />
       )}
 
       <article>
         <header className='header--sectionOne'>
-          <div className="flow">
+          <div className='flow'>
             <h1>The leader in interactive VR</h1>
             <p>
-              Founded in 2011, Loopstudios has been producing world-class virtual
-              reality projects for some of the best companies around the globe.
-              Our award-winning creations have transformed businesses through
-              digital experiences that bind to their brand.
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Our award-winning creations have transformed businesses
+              through digital experiences that bind to their brand.
             </p>
           </div>
-
         </header>
       </article>
     </section>

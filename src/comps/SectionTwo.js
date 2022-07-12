@@ -9,7 +9,7 @@ function SectionTwo() {
         See All
       </a>
 
-      <div className='card-container'>
+      <article className='card-container'>
         {data.map((item, index) => {
           return (
             <Card
@@ -17,10 +17,11 @@ function SectionTwo() {
               title={item.title}
               dimg={item.dimg}
               mimg={item.mimg}
+              alt={item.alt}
             />
           );
         })}
-      </div>
+      </article>
     </section>
   );
 }

@@ -19,40 +19,48 @@ export const data = [
     title: ["Deep", "earth"],
     dimg: dimg1,
     mimg: mimg1,
+    alt: "earth",
   },
   {
     title: ["Night", "arcade"],
     dimg: dimg2,
     mimg: mimg2,
+    alt: "arcade",
   },
   {
     title: ["Soccer", "team VR"],
     dimg: dimg3,
     mimg: mimg3,
+    alt: "vr",
   },
   {
     title: ["The", "grid"],
     dimg: dimg4,
     mimg: mimg4,
+    alt: "grid",
   },
   {
     title: ["From up", "above VR"],
     dimg: dimg5,
     mimg: mimg5,
+    alt: "above vr",
   },
   {
     title: ["Pocket", "borealis"],
     dimg: dimg6,
     mimg: mimg6,
+    alt: "borealis",
   },
   {
     title: ["The", "curiosity"],
     dimg: dimg7,
     mimg: mimg7,
+    alt: "curiosity",
   },
   {
     title: ["Make it", "fisheye"],
     dimg: dimg8,
     mimg: mimg8,
+    alt: "fisheye",
   },
 ];

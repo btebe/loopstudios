@@ -5,8 +5,8 @@ import twitter from "../images/icon-twitter.svg";
 import instagram from "../images/icon-instagram.svg";
 function Footer() {
   return (
-    <div className='bg-dark '>
-      <div className="container grid grid-container--footer flow--footer">
+    <footer className='bg-dark '>
+      <div className='container grid grid-container--footer flow--footer'>
         <h1 className='logo text-white fm-alata'>loopstudios</h1>
         <ul className='footer--brands flex underline-indicators--social'>
           <li>
@@ -31,12 +31,10 @@ function Footer() {
           <li>Support</li>
         </ul>
         <p className='footer--publish text-dark-gray'>
-
           © 2021 Loopstudios. All rights reserved.
         </p>
       </div>
-
-    </div>
+    </footer>
   );
 }
 
